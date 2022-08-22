@@ -1,0 +1,301 @@
+.sl-block {
+    display: block;
+    position: absolute;
+    z-index: auto;
+    min-width: 1px;
+    min-height: 1px;
+    pointer-events: none;
+}
+
+.sl-block-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    outline: 0;
+    word-wrap: break-word;
+}
+
+.hud__meter_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hud__meter__container--outer {
+    position: relative;
+    left: 8px;
+    background: transparent;
+    border: 1px solid #262631;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.45),
+        0 5px 3px 0 rgba(0, 0, 0, 0.1), 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 6rem;
+    padding: 0;
+    width: 520px;
+    height: 20px;
+    transform: translate3d(-50%, 320px, 0) rotate3d(0, 0, -1, 90deg);
+}
+
+.hud__meter__marker {
+    width: 1px;
+    height: 92%;
+    background: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 4%;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.9);
+}
+
+.hud__meter__marker:nth-of-type(1) {
+    left: 10%;
+}
+
+.hud__meter__marker:nth-of-type(2) {
+    left: 20%;
+}
+
+.hud__meter__marker:nth-of-type(3) {
+    left: 30%;
+}
+
+.hud__meter__marker:nth-of-type(4) {
+    left: 40%;
+}
+
+.hud__meter__marker:nth-of-type(5) {
+    left: 50%;
+}
+
+.hud__meter__marker:nth-of-type(6) {
+    left: 60%;
+}
+
+.hud__meter__marker:nth-of-type(7) {
+    left: 70%;
+}
+
+.hud__meter__marker:nth-of-type(8) {
+    left: 80%;
+}
+
+.hud__meter__marker:nth-of-type(9) {
+    left: 90%;
+}
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.hud__meter__container {
+    background: transparent;
+    background-image: linear-gradient(
+        -180deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.6) 19%,
+        rgba(0, 0, 0, 0.44) 42%,
+        rgba(166, 166, 166, 0.25) 100%
+    );
+    border: 0 solid rgba(255, 255, 255, 0.4);
+    box-shadow: inset -4px 0 3px 0 rgba(0, 0, 0, 0.5),
+        inset 4px 0 3px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+}
+
+.hud__meter__bar {
+    transition: none;
+}
+
+.hud__meter__bar--default {
+    background-image: linear-gradient(to right, #0b3c15, #1b9333 50%, #23be42);
+    background-repeat: no-repeat;
+    box-shadow: inset -1px 0 0 0 rgba(255, 255, 255, 0.6),
+        inset 0 7px 0 0 rgba(255, 255, 255, 0.18);
+}
+
+.hud__meter__bar--loss {
+    z-index: 1;
+    background: rgba(232, 82, 59, 0.5);
+    transition: none;
+    transform-origin: center left;
+    -webkit-animation: anim-meter-change--loss__bar 0.8s ease-in-out infinite;
+    animation: anim-meter-change--loss__bar 0.8s ease-in-out infinite;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px rgba(232, 82, 59, 0.4),
+        0 0 20px 0 rgba(232, 82, 59, 0.7),
+        inset 1px 0 0 0 rgba(255, 255, 255, 0.6),
+        inset -1px 0 0 0 rgba(255, 255, 255, 0.6);
+}
+
+.hud__meter__bar--default[data-toggle='tooltip']::after {
+    content: attr(data-after);
+    top: -4px;
+    left: calc(90% - 10px);
+    font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
+        BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    min-width: 200px;
+    transform: rotate(90deg);
+    max-width: 300px;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    word-wrap: break-word;
+    pointer-events: none;
+    color: #fff;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: rgba(20, 31, 41, 0.85);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    font-size: 1rem;
+    opacity: 0;
+    z-index: 1070;
+    position: absolute;
+    display: block;
+    transform-origin: left center;
+}
+
+.hud__meter__bar--default[data-toggle='tooltip']::before {
+    content: '';
+    top: 9px;
+    left: calc(90% - 6px);
+    transform: rotate(180deg);
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+    opacity: 0;
+    z-index: 1070;
+    position: absolute;
+    display: block;
+    transform-origin: left center;
+}
+
+.hud__meter__bar--gain::before,
+.hud__meter__bar--loss::before {
+    font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
+        BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    display: block;
+    position: absolute;
+    transform-origin: center center;
+    left: 50%;
+    transform: translate(-50%);
+    text-overflow: string;
+    overflow: visible;
+    white-space: nowrap;
+    color: white;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    line-height: 1;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    content: '-' attr(aria-valuenow);
+}
+
+.hud__meter__bar__change-indicator::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        -90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+}
+
+.hud__meter__bar__change-indicator::after {
+    display: block;
+    content: '';
+    height: 100%;
+    width: 40px;
+}
+
+.hud__meter__bar__change-indicator {
+    -webkit-animation: meter-change-indicator-loss 0.8s ease-in-out infinite;
+    animation: meter-change-indicator-loss 0.8s ease-in-out infinite;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hud__meter__bar--gain {
+    z-index: 1;
+    background: #64e37d;
+    transition: none;
+    transform-origin: center left;
+    -webkit-animation: anim-meter-change--gain__bar 0.8s ease-in-out infinite;
+    animation: anim-meter-change--gain__bar 0.8s ease-in-out infinite;
+    overflow: hidden;
+    box-shadow: 0 0 10px 10px rgba(100, 227, 125, 0.4),
+        0 0 20px 0 rgba(100, 227, 125, 0.7),
+        inset 1px 0 0 0 rgba(255, 255, 255, 0.6),
+        inset -1px 0 0 0 rgba(255, 255, 255, 0.6),
+        inset 0 7px 0 0 rgba(255, 255, 255, 0.18);
+}
+
+.progress:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: -10px;
+}
+
+#side_bar {
+    visibility: hidden;
+}
+
+#thaught_6 {
+    visibility: hidden;
+}
