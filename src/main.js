@@ -158,7 +158,7 @@ const step5 = () => {
     hudMeterBarGain.style.visibility = 'visible'
 }
 
-const nextSection = () => {
+export const nextSection = () => {
     try {
         index++
         console.log('HELLO')
