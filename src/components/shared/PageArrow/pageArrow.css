@@ -1,0 +1,151 @@
+button {
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: currentColor;
+    -webkit-transform: scale(0.9999);
+    transform: scale(0.9999);
+    -webkit-transition: color 0.2s ease, opacity 0.2s ease,
+        -webkit-transform 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease, -webkit-transform 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease,
+        -webkit-transform 0.2s ease;
+    z-index: 2;
+    pointer-events: auto;
+    font-size: inherit;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.navigate-right {
+    right: 1em;
+    bottom: 3.2em;
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.navigate-left {
+    right: 6.4em;
+    bottom: 3.2em;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.navigate-right.enabled button {
+    opacity: 0.3;
+}
+
+.navigate-left.enabled button {
+    opacity: 0.3;
+}
+
+.navigate-right.enabled button:hover {
+    opacity: 1;
+}
+
+.navigate-left.enabled button:hover {
+    opacity: 1;
+}
+
+.navigate-right.enabled {
+    visibility: visible;
+    opacity: 0.9;
+    cursor: pointer;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.navigate-right.enabled {
+    opacity: 1;
+}
+.navigate-left.enabled {
+    visibility: visible;
+    opacity: 0.9;
+    cursor: pointer;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.navigate-left.enabled {
+    opacity: 1;
+}
+.controls-arrow {
+    position: relative;
+    width: 3.6em;
+    height: 3.6em;
+}
+
+.navigate-right .controls-arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.controls-arrow:before {
+    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
+    transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
+}
+
+.navigate-left .controls-arrow:before {
+    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
+    transform: translateX(0.5em) translateY(1.55em) rotate(45deg);
+}
+
+.controls-arrow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.6em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    background-color: currentColor;
+    -webkit-transition: all 0.15s ease, background-color 0.8s ease;
+    transition: all 0.15s ease, background-color 0.8s ease;
+    -webkit-transform-origin: 0.2em 50%;
+    transform-origin: 0.2em 50%;
+    will-change: transform;
+}
+
+.navigate-right .controls-arrow:after {
+    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
+    transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
+}
+
+.navigate-left .controls-arrow:after {
+    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
+    transform: translateX(0.5em) translateY(1.55em) rotate(-45deg);
+}
+
+.controls-arrow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.6em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    background-color: currentColor;
+    -webkit-transition: all 0.15s ease, background-color 0.8s ease;
+    transition: all 0.15s ease, background-color 0.8s ease;
+    -webkit-transform-origin: 0.2em 50%;
+    transform-origin: 0.2em 50%;
+    will-change: transform;
+}
+
+.controls-arrow:hover:before {
+    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(40deg);
+    transform: translateX(0.5em) translateY(1.55em) rotate(40deg);
+    background: white;
+}
+
+.controls-arrow:hover:after {
+    -webkit-transform: translateX(0.5em) translateY(1.55em) rotate(-40deg);
+    transform: translateX(0.5em) translateY(1.55em) rotate(-40deg);
+    background: white;
+}

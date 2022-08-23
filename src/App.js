@@ -3,9 +3,10 @@ import DoubleBoxWrapper from './components/shared/DoubleBoxWrapper'
 import MobileView from './components/shared/MobileView'
 import SideBar from './components/SideBar'
 import TVBroadcast from './components/TVBroadcast'
-import { nextSection } from './main'
 import ThinkingCloud from './components/Screen2/ThinkingCloud'
 import ThaughtPop from './components/Screen3/ThaughtPop'
+import RightArrow from './components/shared/PageArrow/RightArrow'
+import LeftArrow from './components/shared/PageArrow/LeftArrow'
 
 function App() {
     return (
@@ -82,9 +83,9 @@ function App() {
                 />
             </section>
 
-            <div className='next' onClick={() => nextSection()}>
-                NEXT
-            </div>
+            <RightArrow />
+
+            <LeftArrow />
 
             <div className='backgrounds'>
                 <div className='main__body_bg'></div>

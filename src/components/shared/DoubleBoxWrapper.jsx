@@ -7,10 +7,10 @@ const DoubleBoxWrapper = ({
     content,
 }) => {
     return (
-        <div class={class_name} id={id}>
-            <div class='designed_double_shade_box_content_top_left'>
+        <div className={class_name} id={id}>
+            <div className='designed_double_shade_box_content_top_left'>
                 <div
-                    class={`designed_double_shade_box_caption_wraper ${
+                    className={`designed_double_shade_box_caption_wraper ${
                         bottom ? 'designed_double_shade_box_2' : ''
                     }`}
                 >
