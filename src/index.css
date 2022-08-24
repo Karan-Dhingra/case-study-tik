@@ -13,6 +13,17 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.cursor-\[zoom-out\] {
+    cursor: zoom-out;
+}
+.cursor-\[zoom-in\],
+.cursor-zoom-in {
+    cursor: zoom-in;
+}
+.cursor-zoom-out {
+    cursor: zoom-out;
+}
+
 .next {
     position: absolute;
     color: wheat;
@@ -47,11 +58,11 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    width: 90%;
-    height: 90%;
+    width: 1300px;
+    height: 630px;
     z-index: 1;
     margin: auto;
-    pointer-events: none;
+    /* pointer-events: none; */
     perspective: 600px;
     /* z-index: 2; */
 }
@@ -348,6 +359,16 @@ body {
     z-index: -1;
 }
 
+.mobile_section_inner video {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    max-width: 92%;
+    max-height: 97%;
+    border-radius: 7%;
+    z-index: -1;
+}
+
 .mobile_section_inner:after {
     content: '';
     position: absolute;
@@ -397,4 +418,13 @@ body {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+}
+
+#mobile_screen_video_play {
+    visibility: hidden;
+}
+
+#thaught_8,
+#thaught_9 {
+    visibility: hidden;
 }

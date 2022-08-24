@@ -1,0 +1,117 @@
+.hud__callout__wrapper {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    perspective: 1500px;
+}
+
+.hud__callout__wrapper--animated {
+    display: none;
+    transform-origin: center center;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation: 0.53s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s
+        fadeInDownDist50;
+    animation: 0.53s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s fadeInDownDist50;
+
+    display: block;
+}
+
+.hud__callout {
+    position: relative;
+    font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
+        BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    max-width: 424px;
+    margin-bottom: 1rem;
+    padding: 16px 32px 28px 64px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-radius: 0.25rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
+        BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    color: #505a62;
+}
+
+.hud__callout--animated {
+    display: none;
+    transform-origin: center center;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation: 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s
+        rotate-springish;
+    animation: 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s rotate-springish;
+}
+
+.hud__callout--ux::before {
+    background: #4ca6f6;
+}
+
+.hud__callout::before {
+    content: '';
+    height: 100%;
+    width: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f0b80f;
+    border-radius: 0.25rem;
+}
+
+.hud__callout__title {
+    font-size: 24px;
+    font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
+        BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    text-transform: capitalize;
+}
+
+.hud__callout__title::before {
+    content: '#Pro Tip';
+    color: #f0b80f;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+
+    color: #4ca6f6;
+    content: '#UX Pro Tip';
+}
+
+.hud__callout p {
+    margin-bottom: 0.25em;
+}
+
+.hud__callout::after {
+    content: '';
+    background-image: url('https://growth.design/icons/icon__callout--default.png');
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 17.6px;
+    left: 19.52px;
+    width: 30px;
+    height: 30px;
+}
+
+.hud__callout--ux::after {
+    background-image: url('https://growth.design/icons/icon__callout--ux.png');
+}

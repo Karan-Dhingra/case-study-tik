@@ -204,7 +204,42 @@
     transform-origin: left center;
 }
 
-.hud__meter__bar--gain::before,
+.hud__meter__bar--gain::before {
+    font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
+        BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,
+        'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    display: block;
+    position: absolute;
+    transform-origin: center center;
+    left: 50%;
+    transform: translate(-50%);
+    text-overflow: string;
+    overflow: visible;
+    white-space: nowrap;
+    color: white;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    line-height: 1;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    content: '+' attr(aria-valuenow);
+}
+
 .hud__meter__bar--loss::before {
     font-family: ui-sans-serif, system-ui, -system-ui, -apple-system,
         BlinkMacSystemFont, Roboto, 'Segoe UI', 'Helvetica Neue', Arial,

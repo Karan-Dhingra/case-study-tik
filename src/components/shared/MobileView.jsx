@@ -10,6 +10,13 @@ const MobileView = () => {
                         alt=''
                         id='mobile_screen_part'
                     />
+
+                    <video
+                        src='https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/575247aefa7f9d5220217e71e4caf179.mp4'
+                        id='mobile_screen_video_play'
+                        autoPlay
+                        loop
+                    ></video>
                 </div>
             </div>
         </>

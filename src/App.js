@@ -7,11 +7,12 @@ import ThinkingCloud from './components/Screen2/ThinkingCloud'
 import ThaughtPop from './components/Screen3/ThaughtPop'
 import RightArrow from './components/shared/PageArrow/RightArrow'
 import LeftArrow from './components/shared/PageArrow/LeftArrow'
+import MovingDiv from './components/MovingDiv.jsx/MovingDiv'
 
 function App() {
     return (
         <>
-            <section className='content_of_this_slide'>
+            <section className='content_of_this_slide' id='hijo'>
                 <EmojiLowerBottom />
                 <SideBar />
                 <TVBroadcast />
@@ -28,6 +29,7 @@ function App() {
                     ]}
                     para={'para_absolute_4'}
                 />
+
                 <ThaughtPop
                     className='thinkingScreen_5'
                     id='thaught_5'
@@ -37,6 +39,7 @@ function App() {
                     ]}
                     para={'para_absolute_5'}
                 />
+
                 <ThaughtPop
                     className='thinkingScreen_5'
                     id='thaught_6'
@@ -48,6 +51,35 @@ function App() {
                     para={'para_absolute_5'}
                 />
 
+                <ThaughtPop
+                    className='thinkingScreen_5'
+                    id='thaught_7'
+                    content={[`Seems simple enough!`, `swipe`]}
+                    para={'para_absolute_5'}
+                />
+
+                <DoubleBoxWrapper
+                    id={'thaught_8'}
+                    content={[`The first video instantly`, `got my attention…`]}
+                    top={420}
+                    left={30}
+                    bottom={24}
+                />
+
+                <ThaughtPop
+                    className='thinkingScreen_5'
+                    id='thaught_9'
+                    content={[
+                        `Also, unless you manually pause the default video loop, it keeps you engaged and eliminates any downtime.`,
+                        `Notice how immersive this full-screen interface is.`,
+                    ]}
+                    para={'para_absolute_5'}
+                    parentWidth={'315px'}
+                    parentHeight={'185px'}
+                    svgHeight={'190px'}
+                    svgWidth={'400px'}
+                />
+
                 <DoubleBoxWrapper
                     id={'content_box_top_1'}
                     content={[
@@ -57,7 +89,7 @@ function App() {
                 />
                 <DoubleBoxWrapper
                     id={'content_box_bottom_1'}
-                    bottom
+                    cont2
                     content={[
                         `It mentioned TikTok.`,
                         `Which made me realize that…`,
@@ -66,7 +98,7 @@ function App() {
                 <DoubleBoxWrapper
                     id={'content_box_top_2'}
                     content={[
-                        `…I've <strong>never tried</strong> TikTok before.`,
+                        `…I've never tried TikTok before.`,
                         `I just heard that its feed was
                         fun and addictive.`,
                     ]}
@@ -74,13 +106,15 @@ function App() {
                 <DoubleBoxWrapper
                     id={'content_box_top_3'}
                     content={[
-                        `But I thought that a <strong>good laugh</strong> in
-                        these stressful times <strong>couldn't hurt</strong> so…`,
+                        `But I thought that a good laugh in
+                        these stressful times couldn't hurt so…`,
                         `I downloaded
                         TikTok.`,
                         `(…naively)`,
                     ]}
                 />
+
+                <MovingDiv />
             </section>
 
             <RightArrow />
