@@ -16,7 +16,21 @@ function App() {
                 <EmojiLowerBottom />
                 <SideBar />
                 <TVBroadcast />
-                <MobileView />
+
+                <MobileView id={'mobile_center'} srcId={'mobile_screen_part'} />
+                <MobileView
+                    id={'mobile_center_2'}
+                    srcId={'mobile_screen_part_2'}
+                />
+                <MobileView
+                    id={'mobile_center_3'}
+                    srcId={'mobile_screen_part_3'}
+                />
+                <MobileView
+                    id={'mobile_center_4'}
+                    srcId={'mobile_screen_part_4'}
+                />
+
                 <ThinkingCloud />
 
                 <ThaughtPop
@@ -58,9 +72,30 @@ function App() {
                     para={'para_absolute_5'}
                 />
 
+                <ThaughtPop
+                    className='thinkingScreen_5'
+                    id='thaught_10'
+                    content={[
+                        `Oh… is TikTok now testing my reaction to funny videos instead of animals?…`,
+                        `swipe`,
+                    ]}
+                    para={'para_absolute_5'}
+                />
+
                 <DoubleBoxWrapper
                     id={'thaught_8'}
                     content={[`The first video instantly`, `got my attention…`]}
+                    top={420}
+                    left={30}
+                    bottom={24}
+                />
+
+                <DoubleBoxWrapper
+                    id={'thaught_11'}
+                    content={[
+                        `The next few swipes brought me more`,
+                        `funny (but weird) videos, until—`,
+                    ]}
                     top={420}
                     left={30}
                     bottom={24}

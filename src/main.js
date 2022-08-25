@@ -67,6 +67,21 @@ const reset = () => {
     const thaught_8 = document.getElementById('thaught_8')
     thaught_8.style.visibility = 'hidden'
 
+    const thaught_10 = document.getElementById('thaught_10')
+    thaught_10.style.visibility = 'hidden'
+
+    const thaught_11 = document.getElementById('thaught_11')
+    thaught_11.style.visibility = 'hidden'
+
+    const mobile_center_2 = document.getElementById('mobile_center_2')
+    mobile_center_2.style.visibility = 'hidden'
+
+    const mobile_center_3 = document.getElementById('mobile_center_3')
+    mobile_center_3.style.visibility = 'hidden'
+
+    const mobile_center_4 = document.getElementById('mobile_center_4')
+    mobile_center_4.style.visibility = 'hidden'
+
     const hudMeterBarLoss = document.getElementById('hud-meter-bar-loss')
     hudMeterBarLoss.style.visibility = 'hidden'
 
@@ -672,6 +687,7 @@ const step9 = () => {
     mobile_screen_video_play.style.visibility = 'hidden'
     mobile_screen_video_play.src =
         'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/be8c8cced9af34f9077db06184f6bd69.mp4'
+    mobile_screen_video_play.pause()
 
     const hudMeterBarLoss = document.getElementById('hud-meter-bar-loss')
     hudMeterBarLoss.style.visibility = 'hidden'
@@ -712,6 +728,7 @@ const revStep9 = () => {
     mobile_screen_video_play.style.visibility = 'hidden'
     mobile_screen_video_play.src =
         'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/be8c8cced9af34f9077db06184f6bd69.mp4'
+    mobile_screen_video_play.pause()
 
     const hudMeterBarLoss = document.getElementById('hud-meter-bar-loss')
     hudMeterBarLoss.style.visibility = 'hidden'
@@ -728,8 +745,272 @@ const revStep9 = () => {
     hudMeterBarDefault.style.width = '50%'
 }
 
+const step10 = () => {
+    const mobile_center = document.getElementById('mobile_center')
+    mobile_center.style.visibility = 'visible'
+
+    const mobile_screen_part = document.getElementById('mobile_screen_part')
+    mobile_screen_part.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/a9508be0656c26926a1f0d89fa4cc166.jpg'
+
+    const lower_emoji_image = document.getElementById('lower_emoji_image')
+    lower_emoji_image.classList.add('addTransition')
+    lower_emoji_image.src =
+        'https://s3.amazonaws.com/files.growth.design/media/avatar/avatar__dan--surprise--100.png'
+
+    const side_bar = document.getElementById('side_bar')
+    side_bar.style.visibility = 'visible'
+
+    const lower_thinking_4 = document.getElementById('lower_thinking_4')
+    lower_thinking_4.style.visibility = 'visible'
+
+    const thaught_10 = document.getElementById('thaught_10')
+    thaught_10.style.visibility = 'visible'
+
+    const mobile_screen_video_play = document.getElementById(
+        'mobile_screen_video_play'
+    )
+    mobile_screen_video_play.style.visibility = 'hidden'
+    mobile_screen_video_play.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/be8c8cced9af34f9077db06184f6bd69.mp4'
+    mobile_screen_video_play.pause()
+
+    const hudMeterBarLoss = document.getElementById('hud-meter-bar-loss')
+    hudMeterBarLoss.style.visibility = 'hidden'
+
+    const animated_callout_option = document.getElementById(
+        'animated_callout_option'
+    )
+    animated_callout_option.style.display = 'none'
+
+    const hudMeterBarGain = document.getElementById('hud-meter-bar-gain')
+    hudMeterBarGain.style.visibility = 'hidden'
+
+    const hudMeterBarDefault = document.getElementById('hud-meter-bar-default')
+    hudMeterBarDefault.style.width = '50%'
+}
+
+const revStep10 = () => {
+    reset()
+
+    const mobile_center = document.getElementById('mobile_center')
+    mobile_center.style.visibility = 'visible'
+
+    const mobile_screen_part = document.getElementById('mobile_screen_part')
+    mobile_screen_part.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/a9508be0656c26926a1f0d89fa4cc166.jpg'
+
+    const lower_emoji_image = document.getElementById('lower_emoji_image')
+    lower_emoji_image.classList.add('addTransition')
+    lower_emoji_image.src =
+        'https://s3.amazonaws.com/files.growth.design/media/avatar/avatar__dan--surprise--100.png'
+
+    const side_bar = document.getElementById('side_bar')
+    side_bar.style.visibility = 'visible'
+
+    const lower_thinking_4 = document.getElementById('lower_thinking_4')
+    lower_thinking_4.style.visibility = 'visible'
+
+    const thaught_10 = document.getElementById('thaught_10')
+    thaught_10.style.visibility = 'visible'
+
+    const hudMeterBarDefault = document.getElementById('hud-meter-bar-default')
+    hudMeterBarDefault.style.width = '50%'
+}
+
+const step11 = () => {
+    const mobile_center = document.getElementById('mobile_center')
+    mobile_center.style.visibility = 'visible'
+    mobile_center.style.zIndex = '50'
+
+    const mobile_center_2 = document.getElementById('mobile_center_2')
+    mobile_center_2.style.visibility = 'visible'
+    mobile_center_2.style.rotate = '-11deg'
+    mobile_center_2.style.left = '310px'
+    mobile_center_2.style.height = '600px'
+    mobile_center_2.style.opacity = '0.7'
+    mobile_center_2.style.zIndex = '49'
+
+    const mobile_center_3 = document.getElementById('mobile_center_3')
+    mobile_center_3.style.visibility = 'visible'
+    mobile_center_3.style.rotate = '11deg'
+    mobile_center_3.style.left = '753px'
+    mobile_center_3.style.height = '574px'
+    mobile_center_3.style.top = '10px'
+    mobile_center_3.style.zIndex = '49'
+    mobile_center_3.style.opacity = '0.9'
+    //     visibility: visible;
+    // rotate: 11deg;
+    // left: 753px;
+    // height: 574px;
+    // opacity: 0.7;
+    // top: 50px;
+
+    const mobile_center_4 = document.getElementById('mobile_center_4')
+    mobile_center_4.style.visibility = 'visible'
+    mobile_center_4.style.rotate = '14deg'
+    mobile_center_4.style.left = '920px'
+    mobile_center_4.style.top = '50px'
+    mobile_center_4.style.height = '574px'
+    mobile_center_4.style.opacity = '0.5'
+    mobile_center_4.style.zIndex = '48'
+
+    //     visibility: visible;
+    // rotate: 11deg;
+    // left: 753px;
+    // height: 574px;
+    // opacity: 0.7;
+    // top: 50px;
+
+    const mobile_screen_part = document.getElementById('mobile_screen_part')
+    mobile_screen_part.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/a9508be0656c26926a1f0d89fa4cc166.jpg'
+
+    const mobile_screen_part_2 = document.getElementById('mobile_screen_part_2')
+    mobile_screen_part_2.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/02261e0d646df14d6616ad42d923f78a.jpg'
+
+    const mobile_screen_part_3 = document.getElementById('mobile_screen_part_3')
+    mobile_screen_part_3.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/0f00f1f42be463ec009cca065cf0d132.jpg'
+
+    const mobile_screen_part_4 = document.getElementById('mobile_screen_part_4')
+    mobile_screen_part_4.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/3e2d77abe12ba4e7c195bf23d2ee2741.jpg'
+
+    const lower_emoji_image = document.getElementById('lower_emoji_image')
+    lower_emoji_image.classList.add('addTransition')
+    lower_emoji_image.src =
+        'https://s3.amazonaws.com/files.growth.design/media/avatar/avatar__dan--surprise--100.png'
+
+    const side_bar = document.getElementById('side_bar')
+    side_bar.style.visibility = 'visible'
+
+    const lower_thinking_4 = document.getElementById('lower_thinking_4')
+    lower_thinking_4.style.visibility = 'hidden'
+
+    const thaught_10 = document.getElementById('thaught_10')
+    thaught_10.style.visibility = 'hidden'
+
+    const thaught_11 = document.getElementById('thaught_11')
+    thaught_11.style.visibility = 'visible'
+    thaught_11.style.zIndex = '52'
+
+    const mobile_screen_video_play = document.getElementById(
+        'mobile_screen_video_play'
+    )
+    mobile_screen_video_play.style.visibility = 'hidden'
+    mobile_screen_video_play.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/be8c8cced9af34f9077db06184f6bd69.mp4'
+    mobile_screen_video_play.pause()
+
+    const hudMeterBarLoss = document.getElementById('hud-meter-bar-loss')
+    hudMeterBarLoss.style.visibility = 'hidden'
+
+    const animated_callout_option = document.getElementById(
+        'animated_callout_option'
+    )
+    animated_callout_option.style.display = 'none'
+
+    const hudMeterBarGain = document.getElementById('hud-meter-bar-gain')
+    hudMeterBarGain.style.visibility = 'visible'
+    hudMeterBarGain.style.width = '5%'
+    hudMeterBarGain.setAttribute('aria-valuenow', '5')
+
+    const hudMeterBarDefault = document.getElementById('hud-meter-bar-default')
+    hudMeterBarDefault.style.width = '50%'
+}
+
+const revStep11 = () => {
+    reset()
+
+    const mobile_center = document.getElementById('mobile_center')
+    mobile_center.style.visibility = 'visible'
+    mobile_center.style.zIndex = '50'
+
+    const mobile_center_2 = document.getElementById('mobile_center_2')
+    mobile_center_2.style.visibility = 'visible'
+    mobile_center_2.style.rotate = '-11deg'
+    mobile_center_2.style.left = '310px'
+    mobile_center_2.style.height = '600px'
+    mobile_center_2.style.opacity = '0.7'
+    mobile_center_2.style.zIndex = '49'
+
+    const mobile_center_3 = document.getElementById('mobile_center_3')
+    mobile_center_3.style.visibility = 'visible'
+    mobile_center_3.style.rotate = '11deg'
+    mobile_center_3.style.left = '753px'
+    mobile_center_3.style.height = '574px'
+    mobile_center_3.style.top = '10px'
+    mobile_center_3.style.zIndex = '49'
+    mobile_center_3.style.opacity = '0.9'
+    //     visibility: visible;
+    // rotate: 11deg;
+    // left: 753px;
+    // height: 574px;
+    // opacity: 0.7;
+    // top: 50px;
+
+    const mobile_center_4 = document.getElementById('mobile_center_4')
+    mobile_center_4.style.visibility = 'visible'
+    mobile_center_4.style.rotate = '14deg'
+    mobile_center_4.style.left = '920px'
+    mobile_center_4.style.top = '50px'
+    mobile_center_4.style.height = '574px'
+    mobile_center_4.style.opacity = '0.5'
+    mobile_center_4.style.zIndex = '48'
+
+    //     visibility: visible;
+    // rotate: 11deg;
+    // left: 753px;
+    // height: 574px;
+    // opacity: 0.7;
+    // top: 50px;
+
+    const mobile_screen_part = document.getElementById('mobile_screen_part')
+    mobile_screen_part.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/a9508be0656c26926a1f0d89fa4cc166.jpg'
+
+    const mobile_screen_part_2 = document.getElementById('mobile_screen_part_2')
+    mobile_screen_part_2.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/02261e0d646df14d6616ad42d923f78a.jpg'
+
+    const mobile_screen_part_3 = document.getElementById('mobile_screen_part_3')
+    mobile_screen_part_3.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/0f00f1f42be463ec009cca065cf0d132.jpg'
+
+    const mobile_screen_part_4 = document.getElementById('mobile_screen_part_4')
+    mobile_screen_part_4.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/3e2d77abe12ba4e7c195bf23d2ee2741.jpg'
+
+    const lower_emoji_image = document.getElementById('lower_emoji_image')
+    lower_emoji_image.classList.add('addTransition')
+    lower_emoji_image.src =
+        'https://s3.amazonaws.com/files.growth.design/media/avatar/avatar__dan--surprise--100.png'
+
+    const side_bar = document.getElementById('side_bar')
+    side_bar.style.visibility = 'visible'
+
+    const thaught_11 = document.getElementById('thaught_11')
+    thaught_11.style.visibility = 'visible'
+    thaught_11.style.zIndex = '52'
+
+    const animated_callout_option = document.getElementById(
+        'animated_callout_option'
+    )
+    animated_callout_option.style.display = 'none'
+
+    const hudMeterBarGain = document.getElementById('hud-meter-bar-gain')
+    hudMeterBarGain.style.visibility = 'visible'
+    hudMeterBarGain.style.width = '5%'
+    hudMeterBarGain.setAttribute('aria-valuenow', '5')
+
+    const hudMeterBarDefault = document.getElementById('hud-meter-bar-default')
+    hudMeterBarDefault.style.width = '50%'
+}
+
 export const nextSection = () => {
-    if (index < 9) {
+    if (index < 11) {
         try {
             index++
             console.log('HELLO')
@@ -769,6 +1050,14 @@ export const nextSection = () => {
 
                 case 9:
                     step9()
+                    break
+
+                case 10:
+                    step10()
+                    break
+
+                case 11:
+                    step11()
                     break
 
                 default:
@@ -825,6 +1114,14 @@ export const prevSection = () => {
 
                 case 9:
                     revStep9()
+                    break
+
+                case 10:
+                    revStep10()
+                    break
+
+                case 11:
+                    revStep11()
                     break
 
                 default:
