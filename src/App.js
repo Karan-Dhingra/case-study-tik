@@ -8,6 +8,7 @@ import ThaughtPop from './components/Screen3/ThaughtPop'
 import RightArrow from './components/shared/PageArrow/RightArrow'
 import LeftArrow from './components/shared/PageArrow/LeftArrow'
 import MovingDiv from './components/MovingDiv.jsx/MovingDiv'
+import Graph from './components/Graph/Graph'
 
 function App() {
     return (
@@ -150,6 +151,20 @@ function App() {
                 />
 
                 <MovingDiv />
+
+                <DoubleBoxWrapper
+                    id={'thaught_12'}
+                    cont2
+                    content={[
+                        `So far, here are the key moments in`,
+                        `this TikTok experience...`,
+                    ]}
+                    top={-70}
+                    left={30}
+                    bottom={24}
+                />
+
+                <Graph />
             </section>
 
             <RightArrow />

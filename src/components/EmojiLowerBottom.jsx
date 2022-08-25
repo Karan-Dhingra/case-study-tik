@@ -2,7 +2,7 @@ import React from 'react'
 
 const EmojiLowerBottom = () => {
     return (
-        <div className='bottom_person'>
+        <div className='bottom_person' id='bottom_lower_empji_main'>
             <div className='person_wrapper_bottom'>
                 <div className='person_wrapper_bottom_inner'>
                     <div className='person_emoji_image_wrapper'>
