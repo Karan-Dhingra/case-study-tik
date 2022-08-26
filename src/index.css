@@ -208,7 +208,19 @@ body {
 }
 
 .addTransition {
-    transition: all 0.3s ease-in-out;
+    transition: opacity ease-in-out;
+    animation: opacity ease-in-out;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 0.4s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .cloud_thinking {
@@ -433,7 +445,13 @@ body {
 #thaught_12,
 #graph_2_line,
 #graph_3_line,
+#graph_4_line,
+#graph_5_line,
 #graph__page,
 #thaught_9 {
     visibility: hidden;
+}
+
+#image__graph_bottom {
+    transition: all 0.3s ease-in-out;
 }

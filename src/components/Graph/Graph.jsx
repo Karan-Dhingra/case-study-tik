@@ -70,6 +70,128 @@ const Graph = () => {
             </div>
 
             <div
+                class='sl-block'
+                id='graph_5_line'
+                data-block-type='line'
+                style={{
+                    width: 'auto',
+                    height: 'auto',
+                    left: '640px',
+                    top: '504px',
+                }}
+                data-block-id='ee20e9aff7c67c59ae8d69037b07e718'
+            >
+                <div
+                    class='sl-block-content fragment visible current-fragment'
+                    data-line-x1='0'
+                    data-line-y1='0'
+                    data-line-x2='160'
+                    data-line-y2='74'
+                    data-line-color='#cc0000'
+                    data-line-start-type='none'
+                    data-line-end-type='circle'
+                    style={{ zIndex: 15 }}
+                    data-line-width='5px'
+                    data-fragment-index='3'
+                >
+                    <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        version='1.1'
+                        preserveAspectRatio='xMidYMid'
+                        width='160'
+                        height='74'
+                        viewBox='0 0 160 74'
+                    >
+                        <line
+                            stroke='rgba(0,0,0,0)'
+                            stroke-width='15'
+                            x1='0.5'
+                            y1='0.5'
+                            x2='153.69279719415513'
+                            y2='71.35166870229675'
+                        ></line>
+                        <line
+                            class='line-element'
+                            stroke='#cc0000'
+                            stroke-width='5'
+                            x1='0.5'
+                            y1='0.5'
+                            x2='153.69279719415513'
+                            y2='71.35166870229675'
+                        ></line>
+                        <ellipse
+                            rx='7.5'
+                            ry='7.5'
+                            cx='153.19279719415513'
+                            cy='70.85166870229675'
+                            fill='#cc0000'
+                        ></ellipse>
+                    </svg>
+                </div>
+            </div>
+
+            <div
+                class='sl-block'
+                data-block-type='line'
+                id='graph_4_line'
+                style={{
+                    width: 'auto',
+                    height: 'auto',
+                    left: '471.5px',
+                    top: '427.5px',
+                }}
+                data-block-id='0e7a25997d652ec26628bba4b694b755'
+            >
+                <div
+                    class='sl-block-content fragment visible current-fragment'
+                    data-line-x1='0'
+                    data-line-y1='0'
+                    data-line-x2='168.5'
+                    data-line-y2='76.5'
+                    data-line-color='#f1c232'
+                    data-line-start-type='none'
+                    data-line-end-type='circle'
+                    style={{ zIndex: 16 }}
+                    data-line-width='5px'
+                    data-fragment-index='2'
+                >
+                    <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        version='1.1'
+                        preserveAspectRatio='xMidYMid'
+                        width='168.5'
+                        height='76.5'
+                        viewBox='0 0 168.5 76.5'
+                    >
+                        <line
+                            stroke='rgba(0,0,0,0)'
+                            stroke-width='15'
+                            x1='0.5'
+                            y1='0.5'
+                            x2='162.1708641225212'
+                            y2='73.89953178262832'
+                        ></line>
+                        <line
+                            class='line-element'
+                            stroke='#f1c232'
+                            stroke-width='5'
+                            x1='0.5'
+                            y1='0.5'
+                            x2='162.1708641225212'
+                            y2='73.89953178262832'
+                        ></line>
+                        <ellipse
+                            rx='7.5'
+                            ry='7.5'
+                            cx='161.6708641225212'
+                            cy='73.39953178262832'
+                            fill='#f1c232'
+                        ></ellipse>
+                    </svg>
+                </div>
+            </div>
+
+            <div
                 className='sl-block'
                 data-block-type='line'
                 style={{
@@ -265,6 +387,7 @@ const Graph = () => {
             <div
                 className='sl-block'
                 data-block-type='image'
+                id='emoji_Wrapper_img'
                 style={{
                     width: '92.8564px',
                     height: '129.999px',

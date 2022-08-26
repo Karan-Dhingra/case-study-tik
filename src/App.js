@@ -154,13 +154,12 @@ function App() {
 
                 <DoubleBoxWrapper
                     id={'thaught_12'}
-                    cont2
                     content={[
                         `So far, here are the key moments in`,
                         `this TikTok experience...`,
                     ]}
-                    top={-70}
-                    left={30}
+                    top={80}
+                    left={50}
                     bottom={24}
                 />
 
