@@ -26,6 +26,7 @@ const DoubleBoxWrapper = ({
                     className={`designed_double_shade_box_caption_wraper ${
                         cont2 ? 'designed_double_shade_box_2' : ''
                     }`}
+                    id='double_wrapper_para_content'
                 >
                     {content?.map((cont, key) => (
                         <p key={key}>{cont}</p>

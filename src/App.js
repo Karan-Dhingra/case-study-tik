@@ -9,6 +9,8 @@ import RightArrow from './components/shared/PageArrow/RightArrow'
 import LeftArrow from './components/shared/PageArrow/LeftArrow'
 import MovingDiv from './components/MovingDiv.jsx/MovingDiv'
 import Graph from './components/Graph/Graph'
+import LastMovingDiv from './components/LastMovingDiv/LastMovingDiv'
+import Score from './components/ScoreWrapper/Score'
 
 function App() {
     return (
@@ -152,6 +154,8 @@ function App() {
 
                 <MovingDiv />
 
+                <LastMovingDiv />
+
                 <DoubleBoxWrapper
                     id={'thaught_12'}
                     content={[
@@ -163,6 +167,8 @@ function App() {
                     bottom={24}
                 />
 
+                <Score />
+
                 <Graph />
             </section>
 
@@ -171,7 +177,7 @@ function App() {
             <LeftArrow />
 
             <div className='backgrounds'>
-                <div className='main__body_bg'></div>
+                <div className='main__body_bg' id='bg_background'></div>
             </div>
         </>
     )

@@ -455,3 +455,7 @@ body {
 #image__graph_bottom {
     transition: all 0.3s ease-in-out;
 }
+
+#bg_background {
+    transition: all 0.3s ease-in-out;
+}

@@ -16,6 +16,9 @@ const reset = () => {
     const lower_emoji_image = document.getElementById('lower_emoji_image')
     lower_emoji_image.style.display = 'block'
 
+    const score_wrapper = document.getElementById('score_wrapper')
+    score_wrapper.style.visibility = 'hidden'
+
     const graph__page = document.getElementById('graph__page')
     graph__page.style.visibility = 'hidden'
 
@@ -129,6 +132,9 @@ const reset = () => {
         'animated_callout_option'
     )
     animated_callout_option.style.display = 'none'
+
+    const animated_hud_callout = document.getElementById('animated_hud_callout')
+    animated_hud_callout.style.display = 'none'
 }
 
 const revStep0 = () => {
@@ -1058,6 +1064,7 @@ const step12 = () => {
     const thaught_12 = document.getElementById('thaught_12')
     thaught_12.style.visibility = 'visible'
     thaught_12.style.left = '50px'
+    thaught_12.style.width = '440px'
     thaught_12.style.top = '80px'
 
     const img_emmoji_graph = document.getElementById('img_emmoji_graph')
@@ -1393,6 +1400,9 @@ const step16 = () => {
     )
     bottom_lower_empji_main.style.visibility = 'hidden'
 
+    const bg_background = document.getElementById('bg_background')
+    bg_background.style.opacity = 0.5
+
     const lower_emoji_image = document.getElementById('lower_emoji_image')
     lower_emoji_image.style.display = 'none'
 
@@ -1451,6 +1461,9 @@ const revStep16 = () => {
     thaught_12.style.left = '580px'
     thaught_12.style.top = '350px'
 
+    const bg_background = document.getElementById('bg_background')
+    bg_background.style.opacity = 0.5
+
     const graph_2_line = document.getElementById('graph_2_line')
     graph_2_line.style.visibility = 'visible'
 
@@ -1488,8 +1501,156 @@ const revStep16 = () => {
     graph__page.style.visibility = 'visible'
 }
 
+const step17 = () => {
+    reset()
+
+    const bottom_lower_empji_main = document.getElementById(
+        'bottom_lower_empji_main'
+    )
+    bottom_lower_empji_main.style.visibility = 'hidden'
+
+    const bg_background = document.getElementById('bg_background')
+    bg_background.style.opacity = 0.2
+
+    const lower_emoji_image = document.getElementById('lower_emoji_image')
+    lower_emoji_image.style.display = 'none'
+
+    const thaught_12 = document.getElementById('thaught_12')
+    thaught_12.style.visibility = 'visible'
+    thaught_12.style.left = '780px'
+    thaught_12.style.top = '510px'
+    thaught_12.style.zIndex = 40
+
+    // const double_wrapper_para_content = document.getElementById(
+    //     'double_wrapper_para_content'
+    // )
+    // double_wrapper_para_content.innerText = `Oh, and one last thing for you… →`
+
+    const graph_2_line = document.getElementById('graph_2_line')
+    graph_2_line.style.visibility = 'visible'
+
+    const graph_3_line = document.getElementById('graph_3_line')
+    graph_3_line.style.visibility = 'visible'
+
+    const graph_4_line = document.getElementById('graph_4_line')
+    graph_4_line.style.visibility = 'visible'
+
+    const graph_5_line = document.getElementById('graph_5_line')
+    graph_5_line.style.visibility = 'visible'
+
+    const img_emmoji_graph = document.getElementById('img_emmoji_graph')
+    img_emmoji_graph.style.visibility = 'visible'
+    img_emmoji_graph.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/dc3321b268b7ec7c535823eccaffece6.png'
+    img_emmoji_graph.classList.add('addTransition')
+    img_emmoji_graph.style.opacity = '0'
+    img_emmoji_graph.style.opacity = '1'
+
+    const emoji_Wrapper_img = document.getElementById('emoji_Wrapper_img')
+    img_emmoji_graph.style.top = '0'
+    img_emmoji_graph.style.left = '0'
+    emoji_Wrapper_img.style.top = '450px'
+    emoji_Wrapper_img.style.left = '740px'
+    emoji_Wrapper_img.style.width = '92px'
+
+    const image__graph_bottom = document.getElementById('image__graph_bottom')
+    image__graph_bottom.style.visibility = 'hidden'
+
+    const graph__page = document.getElementById('graph__page')
+    graph__page.style.visibility = 'visible'
+
+    const animated_hud_callout = document.getElementById('animated_hud_callout')
+    animated_hud_callout.style.display = 'block'
+
+    const score_wrapper = document.getElementById('score_wrapper')
+    score_wrapper.style.visibility = 'visible'
+}
+
+const revStep17 = () => {
+    reset()
+
+    const bottom_lower_empji_main = document.getElementById(
+        'bottom_lower_empji_main'
+    )
+    bottom_lower_empji_main.style.visibility = 'hidden'
+
+    const bg_background = document.getElementById('bg_background')
+    bg_background.style.opacity = 0.2
+
+    const lower_emoji_image = document.getElementById('lower_emoji_image')
+    lower_emoji_image.style.display = 'none'
+
+    const thaught_12 = document.getElementById('thaught_12')
+    thaught_12.style.visibility = 'visible'
+    thaught_12.style.left = '780px'
+    thaught_12.style.top = '510px'
+    thaught_12.style.zIndex = 40
+
+    // const double_wrapper_para_content = document.getElementById(
+    //     'double_wrapper_para_content'
+    // )
+    // double_wrapper_para_content.innerText = `Oh, and one last thing for you… →`
+
+    const graph_2_line = document.getElementById('graph_2_line')
+    graph_2_line.style.visibility = 'visible'
+
+    const graph_3_line = document.getElementById('graph_3_line')
+    graph_3_line.style.visibility = 'visible'
+
+    const graph_4_line = document.getElementById('graph_4_line')
+    graph_4_line.style.visibility = 'visible'
+
+    const graph_5_line = document.getElementById('graph_5_line')
+    graph_5_line.style.visibility = 'visible'
+
+    const img_emmoji_graph = document.getElementById('img_emmoji_graph')
+    img_emmoji_graph.style.visibility = 'visible'
+    img_emmoji_graph.src =
+        'https://growth.design/content/case-studies/tiktok-feed-psychology/tiktok-feed-psychology/dc3321b268b7ec7c535823eccaffece6.png'
+    img_emmoji_graph.classList.add('addTransition')
+    img_emmoji_graph.style.opacity = '0'
+    img_emmoji_graph.style.opacity = '1'
+
+    const emoji_Wrapper_img = document.getElementById('emoji_Wrapper_img')
+    img_emmoji_graph.style.top = '0'
+    img_emmoji_graph.style.left = '0'
+    emoji_Wrapper_img.style.top = '450px'
+    emoji_Wrapper_img.style.left = '740px'
+    emoji_Wrapper_img.style.width = '92px'
+
+    const image__graph_bottom = document.getElementById('image__graph_bottom')
+    image__graph_bottom.style.visibility = 'hidden'
+
+    const graph__page = document.getElementById('graph__page')
+    graph__page.style.visibility = 'visible'
+
+    const animated_hud_callout = document.getElementById('animated_hud_callout')
+    animated_hud_callout.style.display = 'block'
+
+    const score_wrapper = document.getElementById('score_wrapper')
+    score_wrapper.style.visibility = 'visible'
+}
+
+const step18 = () => {
+    reset()
+
+    const bottom_lower_empji_main = document.getElementById(
+        'bottom_lower_empji_main'
+    )
+    bottom_lower_empji_main.style.visibility = 'hidden'
+}
+
+const revStep18 = () => {
+    reset()
+
+    const bottom_lower_empji_main = document.getElementById(
+        'bottom_lower_empji_main'
+    )
+    bottom_lower_empji_main.style.visibility = 'hidden'
+}
+
 export const nextSection = () => {
-    if (index < 16) {
+    if (index < 18) {
         try {
             index++
             console.log('HELLO')
@@ -1557,6 +1718,14 @@ export const nextSection = () => {
 
                 case 16:
                     step16()
+                    break
+
+                case 17:
+                    step17()
+                    break
+
+                case 18:
+                    step18()
                     break
 
                 default:
@@ -1641,6 +1810,14 @@ export const prevSection = () => {
 
                 case 16:
                     revStep16()
+                    break
+
+                case 17:
+                    revStep17()
+                    break
+
+                case 16:
+                    revStep18()
                     break
 
                 default:
